@@ -1,4 +1,22 @@
-cpf = '70026587432'
+import re
+import sys
+entrada = input('Digite seu CPF: ')
+#Retirando caracteres indesejaveis 
+#cpf = '700.265.874-32'\
+#    .replace('.','') \
+#   .replace(' ','') \
+#    .replace('-','')
+
+#Outra forma de retirar caracteres indesejaveis
+cpf = re.sub(
+    r'[^0-9]',
+    '',
+    entrada
+)
+#Verificar se os numeros são repetidos
+if entrada == entrada[0]*len(entrada):
+    print('Voce digitou numeros repetidos')
+    sys.exit()
 multiplicacao = 0
 soma = 0
 
