@@ -41,3 +41,4 @@ for i in range(11,1,-1):
 condicao = (soma*10) % 11
 digito_2 = 0 if condicao > 9 else condicao
 print('Digito2: ',digito_2)
+print('CPF valido!')
