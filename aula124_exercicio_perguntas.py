@@ -29,6 +29,6 @@ for x in range(3):
         print('\n Acertou! \U0001f44F \U0001f44F \U0001f44F \n')
     else:
         print('\n Errou! \U0001f44E \U0001f62D \n')
-print('Você acertou', contador, 'de  3.')
+print('Você acertou', contador, 'de 3.')
 
 
