@@ -15,20 +15,20 @@ perguntas = [
         'Resposta': '5',
     },
 ]
-pergunta1 = perguntas[0]
-pergunta2 = perguntas[1]
-pergunta3 = perguntas[2]
+contador = 0
+for x in range(3):
+    print(f'Pergunta:', perguntas[x]['Pergunta'], '🤔' '\n')
 
-print(f'Pergunta:', pergunta1['Pergunta'], '🤔' '\n')
+    print('Alternativas:\n')
+    for i, opcoes in enumerate(perguntas[x]['Opções']):
+        print(f'{i}) {opcoes}')
 
-print('Alternativas:\n')
-for i in pergunta1['Opções']:
-    print(f'',i)
-
-resposta = input( '\n' 'Escolha uma das alternativas:')
-if resposta == pergunta1['Resposta']:
-    print('\n Acertou! \U0001f44F \U0001f44F \U0001f44F \n')
-print('\n Errou \U0001f44E \U0001f44F \U0001f44F \n')
-
+    resposta = input( '\n' 'Escolha uma das alternativas:')
+    if resposta == perguntas[x]['Resposta']:
+        contador+=1
+        print('\n Acertou! \U0001f44F \U0001f44F \U0001f44F \n')
+    else:
+        print('\n Errou! \U0001f44E \U0001f62D \n')
+print('Você acertou', contador, 'de 3.')
 
 
