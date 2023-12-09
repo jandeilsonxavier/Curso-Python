@@ -1,0 +1,3 @@
+from aula131_exercicio_set import lista_de_listas_de_inteiros
+
+print(lista_de_listas_de_inteiros)

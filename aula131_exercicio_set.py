@@ -27,4 +27,4 @@ lista_de_listas_de_inteiros = [
 ]
 for linha, lista in enumerate(lista_de_listas_de_inteiros):
         li = set(lista)
-    print(linha, set(lista))
+        print(linha, set(lista))
