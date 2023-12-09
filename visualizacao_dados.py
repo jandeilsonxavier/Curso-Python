@@ -21,5 +21,5 @@ plt.bar(xs, num_oscars)
 plt.ylabel("# de Premiações")
 plt.title("Meus Filmes Favoritos")
 # nomeia o eixo x com nomes de filmes na barra central
-#plt.xticks([i + 0.1 for i, _ in enumerate(movies)], movies)
+plt.xticks([i + 0.1 for i, _ in enumerate(movies)], movies)
 plt.show()
