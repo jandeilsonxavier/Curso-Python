@@ -31,4 +31,5 @@ def soma(*args):
     for numero in args:
         total += numero
     return total
+
 print(soma(1, 2, 3))

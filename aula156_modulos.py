@@ -1,3 +1,6 @@
-from aula131_exercicio_set import lista_de_listas_de_inteiros
+from aula156_mod import exp
+import aula108_funcoes
+# print(exp(2))
+res = aula108_funcoes.soma(2,3,5)
+print(res)
 
-print(lista_de_listas_de_inteiros)
