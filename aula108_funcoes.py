@@ -17,19 +17,26 @@ print(x)
 escopo1()
 print(x)
 
-def soma(x, y):
-    if x > 10:
-        return [10, 20]
-    return x + y
-soma1 = soma(2, 2)
-soma2 = soma(3, 3)
-print(soma1)
-print(soma2)
-print(soma(11, 55))'''
-def soma(*args):
-    total = 0
-    for numero in args:
-        total += numero
-    return total
+# def soma(x, y):
+#     if x > 10:
+#         return [10, 20]
+#     return x + y
+# soma1 = soma(2, 2)
+# soma2 = soma(3, 3)
+# print(soma1)
+# print(soma2)
+# print(soma(11, 55))'''
+# def soma(*args):
+#     total = 0
+#     for numero in args:
+#         total += numero
+#     return total
 
-print(soma(1, 2, 3))
+# print(soma(1, 2, 3))
+
+def fatorial(n):
+    if n == 1:
+        return 1 
+    return n * fatorial(n-1)
+
+print(fatorial(4))
