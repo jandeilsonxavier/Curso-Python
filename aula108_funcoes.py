@@ -34,26 +34,23 @@ print(x)
 
 # print(soma(1, 2, 3))
 
-def fatorial(n):
-    if n == 1:
-        return 1 
-    return n * fatorial(n-1)
+# def fatorial(n):
+#     if n == 1:
+#         return 1 
+#     return n * fatorial(n-1)
 
-print(fatorial(5))
+# print(fatorial(5))
 
-def contagem(n):
-    if n == 1:
-        return 1 
-    return n * contagem(n-1)
+# def contagem(n):
+#     if n == 1:
+#         return 1 
+#     return n * contagem(n-1)
 
-print(contagem(5))
+# print(contagem(5))
 
 def fibonacci(n):
     if n <= 1:
         return n
     else:
         return fibonacci(n-1) + fibonacci(n-2)
-
-# Exemplo de uso
-resultado = fibonacci(9)
-print(resultado)
+print(fibonacci(5))
