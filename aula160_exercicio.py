@@ -9,7 +9,7 @@ produtos = [
     {'nome': 'Produto 5', 'preco': 10.00},
     {'nome': 'Produto 1', 'preco': 22.32},
     {'nome': 'Produto 3', 'preco': 10.11},
-    {'nome': 'Produto 2', 'preco': 105.87},
+    {'nome': 'Produto 2', 'preco': 105.87}, 
     {'nome': 'Produto 4', 'preco': 69.90},
 ]
 
@@ -22,5 +22,7 @@ novos_produtos = copy.deepcopy(produtos)
 novos_produtos.sort(key=lambda item: item['preco'],reverse=True)
 for produto in novos_produtos:
     produto['preco'] = round(produto['preco']*1.1,2)
-    print(produto)
-
+    #print(produto)
+print(produtos, sep='\n')
+print()
+print(*produtos, sep='\n')
